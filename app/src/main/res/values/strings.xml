@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="art_categories">
+        <item>Painting</item>
+        <item>Sketch</item>
+        <item>Photography</item>
+        <item>Sculpture</item>
+        <item>Calligraphy</item>
+        <item>Digital Art</item>
+        <item>Other</item>
+    </string-array>
+    <string name="app_name">Art Gallery</string>
+    <string name="category">Category</string>
+</resources>

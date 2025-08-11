@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ArtworksActivity">
+
+    <TextView
+        android:id="@+id/artwork_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Artworks"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/artworkRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/artwork_title"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addArtworkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/plus"
+        android:contentDescription="Add Artwork"
+        app:backgroundTint="@color/grey"/>
+
+    <TextView
+        android:id="@+id/addArtwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addArtworkButton"
+        android:layout_marginTop="-140dp"
+        android:layout_marginStart="240dp"
+        android:fontFamily="@font/poppinsregular"
+
+        android:text="Create Artwork"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

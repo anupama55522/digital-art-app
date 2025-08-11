@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtworkDetails"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Artwork Image -->
+        <ImageView
+            android:id="@+id/detailArtworkImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/gallery" />
+
+        <!-- Card-style container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/detailArtworkTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Artwork Title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#212121" />
+
+            <TextView
+                android:id="@+id/detailArtworkCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#616161"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/detailArtworkPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/detailArtworkAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#616161"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/detailArtworkStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#616161"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/detailArtworkCustomize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#616161"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/detailArtworkDimension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#616161"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/detailArtworkDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#212121"
+                android:paddingTop="10dp"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/updateArtworkButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Artwork"
+                android:backgroundTint="#1976D2"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/deleteArtworkButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Artwork"
+                android:backgroundTint="#D32F2F"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtworkDetailsCustomer">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Artwork Image -->
+            <ImageView
+                android:id="@+id/artworkImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop" />
+
+            <!-- Artwork Title -->
+            <TextView
+                android:id="@+id/artworkTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Artwork Price -->
+            <TextView
+                android:id="@+id/artworkPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_marginTop="8dp" />
+
+            <!-- Artwork Description -->
+            <TextView
+                android:id="@+id/artworkDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <!-- Buy Button -->
+            <Button
+                android:id="@+id/buyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy Artwork"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#6200EE"
+                android:textColor="#FFF"/>
+
+            <!-- Customize Button (hidden by default) -->
+            <Button
+                android:id="@+id/customizeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customize"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#03DAC5"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <!-- Order Form (hidden by default) -->
+            <LinearLayout
+                android:id="@+id/orderFormLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/customerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Name" />
+
+                <EditText
+                    android:id="@+id/customerAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Shipping Address" />
+
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Quantity"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/submitOrderButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Order"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFF"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

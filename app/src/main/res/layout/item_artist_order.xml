@@ -1,0 +1,28 @@
+<!-- res/layout/item_artist_order.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/orderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Artwork Title" />
+
+    <TextView android:id="@+id/orderAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipping Address" />
+
+    <TextView android:id="@+id/orderRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customization: None" />
+
+    <TextView android:id="@+id/orderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status" />
+</LinearLayout>
