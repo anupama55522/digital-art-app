@@ -8,8 +8,8 @@ A mobile application designed to connect artists and customers through a digital
 
 - Anupama B  
 - Devika Divyan  
-- Devika R  
-- Neha A Pillai  
+- [Devika R](https://github.com/devikar004)  
+- [Neha A Pillai](https://github.com/Nehaapillai)   
 - Shefna S  
 
 ---
